@@ -135,9 +135,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 110%;
-    height: 110%;
-    background: rgba(255, 255, 255, 0.6);
+    width: 101%;
+    height: 101.5%;
+    background: rgba(255, 255, 255, 0.9);
     opacity: 0;
     transition: 0.5s;
     cursor: pointer;
@@ -149,22 +149,24 @@
 
   .overlay__title{
     position: absolute;
-    font-size: 0.8cm;
+    font-size: 1.3vw;
     font-family: roboto;
     color: rgb(77, 111, 152);
+    font-weight: bold;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
   .overlay__description{
     position: absolute;
-    font-size: 0.5cm;
+    font-size: 1vw;
     font-family: roboto;
     color: rgb(96, 134, 181);
-    font-weight: 300;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
 
  
@@ -177,7 +179,7 @@
 
 <div class="banner">
   <div class="button-position">
-    <a href="landing-page.html">
+    <a href="index.html">
       <button class="home-button">
         Nikolaj Toftte
       </button>
@@ -242,8 +244,8 @@
 
 <div class="thumbnail__row">  
   <div class="thumbnail__container">
+    <img class="images" src="images/mould/mould1.jpg">
     <a href="mould.html">
-      <img class="images" src="images/mould/mould1.jpg">
       <div class="overlay">
         <div class="overlay__title">
           3D Printed Moulds for Concrete Decor
@@ -251,16 +253,16 @@
         <div class="overlay__description">
           Hobby project for DIY contest
         </div>
+      </div>
       </a>
     </div>
-  </div>
 
   <div class="thumbnail__container">
-    <img class="images" src="images/pods/pods_render.png">
+    <img class="images" src="images/pods/IMG_1818.png">
       <a href="pods.html">
         <div class="overlay">
           <div class="overlay__title">
-            Smart Rehab Pods
+            Smart Rehab Training Pods
           </div>
           <div class="overlay__description">
             DTU project
@@ -270,7 +272,7 @@
   </div>
   <div class="thumbnail__container">
     <a href="robot.html">
-      <img class="images" src="images/robot/placeholder.jpg">
+      <img class="images" src="images/robot/robot_1.jpg">
       <div class="overlay">
         <div class="overlay__title">
           Autonomous Robot
@@ -282,6 +284,7 @@
     </a>
   </div>
  </div>
+</div>
 
 <div class="thumbnail__row">
   <div class="thumbnail__container">
@@ -305,7 +308,7 @@
           SimplTronics I/S
         </div>
         <div class="overlay__description">
-          Startup company
+          Online learning startup
         </div>
       </div>
     </a>

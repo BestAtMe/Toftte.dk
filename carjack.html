@@ -91,64 +91,84 @@
     font-family: roboto;
   }
 
-  .about-me{
-    display: flex;
-    align-items: center;
-  }
-
-
-  .image-box{
-    flex-direction: column;
-    width: 700px;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .profile-picture{
-    width: 50%;
-    display: block;
-    border-radius: 300px;
-    border: 3.5px solid rgb(94, 129, 172);
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8%;
-  }
-
-  .image-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    font-size: 1.2cm;
-    text-align: center;
-    height: 10px;
-    margin-top: 15px;
-  }
-  .title-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    font-size: 0.8cm;
-    text-align: center;
-    height: 20px;
-  }
-
-  .header-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    font-size: 1cm;
-  }
-
-  .normal-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    width: 600px;
-    font-size: 0.5cm;
-  }
-
   .link{
     background: none;
     color: rgb(94, 129, 172);
     font-family: roboto;
     cursor: pointer;
+  }
+
+  .portfolio__title{
+    font-family: roboto;
+    font-size: 1.5cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .description__header{
+    font-family: roboto;
+    font-size: 0.8cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: -3%;
+  }
+
+  .description__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    display: flex;
+    margin-left: 15%;
+  }
+
+  .container__description{
+    width: 60%;
+  }
+  .container__info{
+    width: 30%;
+  }
+
+  .about__header{
+    font-family: roboto;
+    font-size: 1cm;
+    color: rgb(94, 129, 172);
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+  .about__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    margin-left: 20%;
+  }
+
+  .image__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .image{
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    margin: 1%;
+  }
+  .image__full{
+    width: 30%;
+    margin: 1%;
+    height: 100%;
+  }
+  .image__width{
+    width: 30%;
+    margin: 1%;
   }
 
   </style>
@@ -160,7 +180,7 @@
 
 <div class="banner">
   <div class="button-position">
-    <a href="landing-page.html">
+    <a href="index.html">
       <button class="home-button">
         Nikolaj Toftte
       </button>
@@ -225,11 +245,81 @@
 </div>
 
 
+<div class="portfolio__title">
+  Carjack R&D
+</div>
 
+<div style="display: flex; flex-direction: row;">
+  <div container__info>
+    <p class="description__header">
+      Type of project
+    </p>
+    <p class="description__text">
+      Product development using Tjalve
+    </p>
+    <p class="description__header">
+      Context
+    </p>
+    <p class="description__text">
+      DTU project
+    </p>
+    <p class="description__header">
+      Year
+    </p>
+    <p class="description__text">
+      2019
+    </p>
+  </div>
+  <div class="container__description">
+    <div class="about__header">
+      About the project
+    </div>
+    <p class="about__text">
+      This project was about using Eskild Tjalve's theory on a structured design process to create a carjack from cradle to a finished product. In short, the fundamental idea in Tjalve's theory is that the earlier in the development phase the idea is, the broader the solution space should be. Therefore this project was about exploring a wide solution space before deciding on a final design. 
+    </p>
 
+  </div>
+</div>
 
+<div class="image__gallery">
+  <img class="image" src="images/car_jack/render.png">
+  <img class="image" src="images/car_jack/solidworks.png">
+</div>
 
+<div class="container__description">
+  <div class="about__header">
+    The process
+  </div>
+  <p class="about__text">
+    The first step was to make a product specification for the product. Based on the product specification five key functionalities were determined for the success of the product: How to get the carjack up and down, how to operate the carjack, how a motor should be interfaced with the carjack, mechanical advantage and locking mechanisms. These five functions were all explored through sketching. Ideas for all functionalities were sketched to explore the solution space. 
+  </p>
+  <p class="about__text">
+    A morphology chart was made to assemble four different designs that could receive weighted scores in key criteria to determine the solution to move forward with.
+  </p>
 
+</div>
+<div class="image__gallery">
+  <img class="image" src="images/car_jack/Scan_Side_5.png">
+  <img class="image" src="images/car_jack/Scan_Side_6.png">
+  <img class="image__full" src="images/car_jack/Morfologiskema_udfyldt.png">
+</div>
+<div class="container__description">
+  <div class="about__header">
+    The winning design
+  </div>
+  <p class="about__text">
+    The winning design was a design that revolved around having a manual foot pump that would drive a shaft connected to a pump. This pump would then pump air into the jack that would then lift the car. The design was sketched and had a simple interface analysis made. finally, the design was modelled in Solidworks.
+  </p>
 
+</div>
+
+<div class="image__gallery">
+
+  <img class="image__full" src="images/car_jack/output-onlinepngtools.png">
+  <img class="image__full" src="images/car_jack/Forbudte_områder_og_brugsflader.png">
+  <img class="image" src="images/car_jack/solidworks.png">
+  <img class="image" src="images/car_jack/render.png">
+
+</div>
 </body>
 </html>

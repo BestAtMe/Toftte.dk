@@ -91,64 +91,80 @@
     font-family: roboto;
   }
 
-  .about-me{
-    display: flex;
-    align-items: center;
-  }
-
-
-  .image-box{
-    flex-direction: column;
-    width: 700px;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .profile-picture{
-    width: 50%;
-    display: block;
-    border-radius: 300px;
-    border: 3.5px solid rgb(94, 129, 172);
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8%;
-  }
-
-  .image-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    font-size: 1.2cm;
-    text-align: center;
-    height: 10px;
-    margin-top: 15px;
-  }
-  .title-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    font-size: 0.8cm;
-    text-align: center;
-    height: 20px;
-  }
-
-  .header-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    font-size: 1cm;
-  }
-
-  .normal-text{
-    color: rgb(94, 129, 172);
-    font-family: roboto;
-    width: 600px;
-    font-size: 0.5cm;
-  }
-
   .link{
     background: none;
     color: rgb(94, 129, 172);
     font-family: roboto;
     cursor: pointer;
+  }
+
+  .portfolio__title{
+    font-family: roboto;
+    font-size: 1.5cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .description__header{
+    font-family: roboto;
+    font-size: 0.8cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: -3%;
+  }
+
+  .description__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    display: flex;
+    margin-left: 15%;
+  }
+
+  .container__description{
+    width: 60%;
+  }
+  .container__info{
+    width: 30%;
+  }
+
+  .about__header{
+    font-family: roboto;
+    font-size: 1cm;
+    color: rgb(94, 129, 172);
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+  .about__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    margin-left: 20%;
+  }
+
+  .image__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .image{
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    margin: 1%;
+  }
+  .image__full{
+    width: 30%;
+    margin: 1%;
+    height: 100%;
   }
 
   </style>
@@ -160,7 +176,7 @@
 
 <div class="banner">
   <div class="button-position">
-    <a href="landing-page.html">
+    <a href="index.html">
       <button class="home-button">
         Nikolaj Toftte
       </button>
@@ -225,10 +241,78 @@
 </div>
 
 
+<div class="portfolio__title">
+  Autonomous Robot
+</div>
 
+<div style="display: flex; flex-direction: row;">
+  <div container__info>
+    <p class="description__header">
+      Type of project
+    </p>
+    <p class="description__text">
+      Mechatronic product development
+    </p>
+    <p class="description__header">
+      Context
+    </p>
+    <p class="description__text">
+      Hobby project
+    </p>
+    <p class="description__header">
+      Year
+    </p>
+    <p class="description__text">
+      2020
+    </p>
+  </div>
+  <div class="container__description">
+    <div class="about__header">
+      About the project
+    </div>
+    <p class="about__text">
+      This project was about making a robot that could drive autonomously using an Arduino. To achieve this I 3D printed the parts for the robot in PLA.
+    </p>
+    <p class="about__text">
+      The robot should be able to drive around the room to look at it's surroundings by turning the sensor at the top to measure distances around it. It then uses these distances to figure out where to go next, to not hit anything. 
+    </p>
+  </div>
+</div>
 
+<div class="image__gallery">
+  <img class="image" src="images/robot/robot_1.jpg">
+  <img class="image" src="images/robot/robot_2.jpg">
 
+</div>
 
+<div class="container__description">
+  <div class="about__header">
+    Iteration 1
+  </div>
+  <p class="about__text">
+    The first iteration of the robot was a simplified design that had no sensors and could only go back and forth. It has four motors controlling the movement of the robot. 
+  </p>
+
+</div>
+<div class="image__gallery">
+  <img class="image" src="images/robot/robot_4.jpg">
+  <img class="image" src="images/robot/robot_7.jpg">
+  <img class="image" src="images/robot/robot_6.jpg">
+</div>
+
+<div class="container__description">
+  <div class="about__header">
+    Iteration 2
+  </div>
+  <p class="about__text">
+    The second iteration was the final iteration of the project. The robot had gotten a nicer-looking design and received a distance sensor that looks like eyes. All code was written in the Arduino compiler. The project has been discontinued due to time constraints but the plan was to also install a light sensor that would turn on the headlights when it drove somewhere dark. 
+  </p>
+</div>
+<div class="image__gallery">
+  <img class="image" src="images/robot/robot_1.jpg">
+  <img class="image" src="images/robot/robot_2.jpg">
+  <img class="image" src="images/robot/robot_3.jpg">
+</div>
 
 
 </body>
