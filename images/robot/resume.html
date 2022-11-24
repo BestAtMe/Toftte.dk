@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>
+    Nikolaj Toftte
+  </title>
+  <link rel="icon" href="images/logotest.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+  html,
+  body{
+    margin: 0%;
+  }
+
+  .home-button{
+    border: none;
+    padding: 0;
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    font-size: 0.8cm;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .default-button{
+    border: none;
+    padding: 0;
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    font-size: 0.8cm;
+    margin-left: 4cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .button-position{
+    display: inline-block;
+  }
+  .contact-info-position{
+    display: inline-block;
+    position: absolute; right: 6%;
+  }
+  .logo-position{
+    display: inline-block;
+    position: absolute; right: 2%;
+  }
+
+
+  .default-button:hover{
+    opacity: 0.5;
+  }
+
+  .default-button-space:hover{
+    opacity: 0.5;
+  }
+
+  .home-button:hover{
+    opacity: 0.5;
+  }
+
+  .home-button-space:hover{
+    opacity: 0.5;
+  }
+
+  .banner{
+    background-color: rgb(195, 205, 221);
+    height: 120px;
+    display:flex;
+    align-items:center;
+  }
+
+  .contact-logo{
+    width: 26px;
+    
+  }
+
+  .contact-info{
+    color: rgb(94, 129, 172);
+    font-size: 0.4cm;
+    font-family: roboto;
+  }
+
+  .body{
+    position:relative;
+    height: 100%;
+    width:100%;
+  }
+
+  .resume{
+    position:absolute;
+    top: 1cm;
+    left: 32%;
+    margin:auto;
+  }
+  .link{
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    cursor: pointer;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+
+<div class="banner">
+  <div class="button-position">
+    <a href="index.html">
+      <button class="home-button">
+        Nikolaj Toftte
+      </button>
+    </a>
+
+  </div>
+
+  <div class="button-position">
+    <a href="resume.html">
+      <button class="default-button">
+        Resumé
+      </button>
+    </a>
+
+  </div>
+
+  <div class="button-position">
+    <a href="projects.html">
+      <button class="default-button">
+        Projects
+      </button>
+    </a>
+  </div>
+
+  <div class="contact-info-position">
+    <div>
+      <p class="contact-info">
+        +45 22 33 39 17
+      </p> 
+    </div>
+    <div>
+      <p class="contact-info">
+        N.Toftte@gmail.com
+      </p>
+    </div>
+    <div class="link">
+      <a style="text-decoration: none" href="https://www.linkedin.com/in/Nikolaj-Toftte/" target="_blank">
+        <p class="contact-info">
+          linkedin.com/in/Nikolaj-Toftte
+        </p>
+      </a>
+    </div>
+  </div>
+    
+    <div class="logo-position">
+      <div>
+        <img class="contact-logo" src="images/phone_logo.png">
+      </div>
+      <div>
+        <img class="contact-logo" src="images/mail_logo.png">
+      </div>
+      <div>
+        <img class="contact-logo" src="images/linkedIn_logo.png">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="body">
+  <img class="resume" src="images/CV.png">
+</div>
+
+
+</body>
+</html>

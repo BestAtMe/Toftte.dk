@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>
+    Nikolaj Toftte
+  </title>
+  <link rel="icon" href="images/logotest.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+  html,
+  body{
+    margin: 0%;
+  }
+
+  .home-button{
+    border: none;
+    padding: 0;
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    font-size: 0.8cm;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .default-button{
+    border: none;
+    padding: 0;
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    font-size: 0.8cm;
+    margin-left: 4cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .button-position{
+    display: inline-block;
+  }
+  .contact-info-position{
+    display: inline-block;
+    position: absolute; right: 6%;
+  }
+  .logo-position{
+    display: inline-block;
+    position: absolute; right: 2%;
+  }
+
+
+  .default-button:hover{
+    opacity: 0.5;
+  }
+
+  .default-button-space:hover{
+    opacity: 0.5;
+  }
+
+  .home-button:hover{
+    opacity: 0.5;
+  }
+
+  .home-button-space:hover{
+    opacity: 0.5;
+  }
+
+  .banner{
+    background-color: rgb(195, 205, 221);
+    height: 120px;
+    display:flex;
+    align-items:center;
+  }
+
+  .contact-logo{
+    width: 26px;
+    
+  }
+
+  .contact-info{
+    color: rgb(94, 129, 172);
+    font-size: 0.4cm;
+    font-family: roboto;
+  }
+
+  .link{
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    cursor: pointer;
+  }
+
+  .portfolio__title{
+    font-family: roboto;
+    font-size: 1.5cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .description__header{
+    font-family: roboto;
+    font-size: 0.8cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: -3%;
+  }
+
+  .description__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    display: flex;
+    margin-left: 15%;
+  }
+
+  .container__description{
+    width: 60%;
+  }
+  .container__info{
+    width: 30%;
+  }
+
+  .about__header{
+    font-family: roboto;
+    font-size: 1cm;
+    color: rgb(94, 129, 172);
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+  .about__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    margin-left: 20%;
+  }
+
+  .image__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .image{
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    margin: 1%;
+  }
+  .image__rotate{
+    transform:rotate(90deg);
+    width: 30%;
+    height: 500 px;
+    object-fit: cover;
+    margin: 1%;
+  }
+  .image__width{
+    width: 30%;
+    margin: 1%;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+
+<div class="banner">
+  <div class="button-position">
+    <a href="index.html">
+      <button class="home-button">
+        Nikolaj Toftte
+      </button>
+    </a>
+  </div>
+
+  <div class="button-position">
+    <a href="resume.html">
+      <button class="default-button">
+        Resumé
+      </button>
+    </a>
+
+  </div>
+
+  <div class="button-position">
+    <a href="projects.html">
+      <button class="default-button">
+        Projects
+      </button>
+    </a>
+  </div>
+
+  <div class="contact-info-position">
+    <div>
+      <p class="contact-info">
+        +45 22 33 39 17
+      </p> 
+    </div>
+    <div class="link">
+      <a style="text-decoration: none" href="mailto:n.toftte@gmail.com">
+        <p class="contact-info">
+          N.Toftte@gmail.com
+        </p>
+      </a>
+      
+    </div>
+    <div class="link">
+      <a style="text-decoration: none" href="https://www.linkedin.com/in/Nikolaj-Toftte/" target="_blank">
+        <p class="contact-info">
+          linkedin.com/in/Nikolaj-Toftte
+        </p>
+      </a>
+    </div>
+  </div>
+    
+    <div class="logo-position">
+      <div>
+        <img class="contact-logo" src="images/phone_logo.png">
+      </div>
+      <div>
+        <img class="contact-logo" src="images/mail_logo.png">
+      </div>
+      <div>
+        <img class="contact-logo" src="images/linkedIn_logo.png">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="portfolio__title">
+  Smart Rehab Training Pods
+</div>
+
+<div style="display: flex; flex-direction: row;">
+  <div container__info>
+    <p class="description__header">
+      Type of project
+    </p>
+    <p class="description__text">
+      Reasearch based IoT product development
+    </p>
+    <p class="description__header">
+      Context
+    </p>
+    <p class="description__text">
+      DTU project
+    </p>
+    <p class="description__header">
+      Year
+    </p>
+    <p class="description__text">
+      2021
+    </p>
+  </div>
+  <div class="container__description">
+    <div class="about__header">
+      About the project
+    </div>
+    <p class="about__text">
+      The smart rehab training pods were a project that involved using internet of things (IoT) to combat obesity. The goal was to create training devices that guide people through exercises by motivating with gamification. The exercises should be planned with a physotherapist and can be adjusted via the app that was made with the pods. 
+    </p>
+    <p class="about__text">
+      The project is coded with Node-red that communicates with a MQTT broker. The broker then communicates with the NodeMCU in each of the four pods that were made for this project. The app prototype can be seen by 
+      <a href="https://www.figma.com/proto/cAvDuYN5w7RuXYg8hTWKCM/Sport-Pods?page-id=41%3A10284&node-id=41%3A10293&viewport=260%2C48%2C0.15&scaling=scale-down&starting-point-node-id=41%3A10293" target="_blank">clicking here</a>
+    </p>
+  </div>
+</div>
+
+<div class="image__gallery">
+  <img class="image" src="images/pods/IMG_1818.png">
+  <img class="image__width" src="images/pods/UserJourney.png">
+  <video width="30%" height="500px" controls="controls">
+    <source src="images/pods/IMG_1822.mp4" type="video/mp4">
+  </video>
+
+
+</div>
+
+<div class="container__description">
+  <div class="about__header">
+    The pods
+  </div>
+  <p class="about__text">
+    Each pod consist of four 3D printed parts: base, body, lid and
+    interior.
+    The interior part is what is holding the button and LED in place
+    as well as hiding the electronics and nodeMCU from the user.
+    There is a switch on the side of the pods connected to a battery inside the pods, for turning them on and off. Pods can only be
+    detected by the app if the pods are on.
+  </p>
+  <p class="about__text">
+    The communication structure is based
+    on a MQTT broker. Whenever the user switches on the pods, every NodeMCU will be assigned a numeric ID. The assignment is
+    currently done in the order in which the various pods connect to
+    the Wifi and in a numerical order starting from 1 and increasing
+    by 1 with every new pod connected. As a result, it is possible to
+    connect n pods to the system. Using the communication with the broker, the user can then communicate with the app when pressing the button, giving the app feedback on what the user is doing. 
+  </p>
+
+</div>
+<div class="image__gallery">
+  <img class="image" src="images/pods/IMG_1815.png">
+  <img class="image" src="images/pods/IMG_1811.png">
+  <img class="image" src="images/pods/IMG_1812.png">
+  <img class="image" src="images/pods/roteret.png">
+  <img class="image__width" src="images/pods/dashboard.png">
+</div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>
+    Nikolaj Toftte
+  </title>
+  <link rel="icon" href="images/logotest.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+  html,
+  body{
+    margin: 0%;
+  }
+
+  .home-button{
+    border: none;
+    padding: 0;
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    font-size: 0.8cm;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .default-button{
+    border: none;
+    padding: 0;
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    font-size: 0.8cm;
+    margin-left: 4cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .button-position{
+    display: inline-block;
+  }
+  .contact-info-position{
+    display: inline-block;
+    position: absolute; right: 6%;
+  }
+  .logo-position{
+    display: inline-block;
+    position: absolute; right: 2%;
+  }
+
+
+  .default-button:hover{
+    opacity: 0.5;
+  }
+
+  .default-button-space:hover{
+    opacity: 0.5;
+  }
+
+  .home-button:hover{
+    opacity: 0.5;
+  }
+
+  .home-button-space:hover{
+    opacity: 0.5;
+  }
+
+  .banner{
+    background-color: rgb(195, 205, 221);
+    height: 120px;
+    display:flex;
+    align-items:center;
+  }
+
+  .contact-logo{
+    width: 26px;
+    
+  }
+
+  .contact-info{
+    color: rgb(94, 129, 172);
+    font-size: 0.4cm;
+    font-family: roboto;
+  }
+
+  .link{
+    background: none;
+    color: rgb(94, 129, 172);
+    font-family: roboto;
+    cursor: pointer;
+  }
+
+  .portfolio__title{
+    font-family: roboto;
+    font-size: 1.5cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .description__header{
+    font-family: roboto;
+    font-size: 0.8cm;
+    color: rgb(94, 129, 172);
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: -3%;
+  }
+
+  .description__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    display: flex;
+    margin-left: 15%;
+  }
+
+  .container__description{
+    width: 60%;
+  }
+  .container__info{
+    width: 30%;
+  }
+
+  .about__header{
+    font-family: roboto;
+    font-size: 1cm;
+    color: rgb(94, 129, 172);
+    margin-left: 20%;
+    margin-top: 2%;
+  }
+  .about__text{
+    font-family: roboto;
+    font-size: 0.5cm;
+    color: rgb(96, 134, 181);
+    font-weight: 300;
+    margin-left: 20%;
+  }
+
+  .image__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .image{
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    margin: 1%;
+  }
+  .image__full{
+    width: 30%;
+    margin: 1%;
+    height: 100%;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+
+<div class="banner">
+  <div class="button-position">
+    <a href="index.html">
+      <button class="home-button">
+        Nikolaj Toftte
+      </button>
+    </a>
+  </div>
+
+  <div class="button-position">
+    <a href="resume.html">
+      <button class="default-button">
+        Resumé
+      </button>
+    </a>
+
+  </div>
+
+  <div class="button-position">
+    <a href="projects.html">
+      <button class="default-button">
+        Projects
+      </button>
+    </a>
+  </div>
+
+  <div class="contact-info-position">
+    <div>
+      <p class="contact-info">
+        +45 22 33 39 17
+      </p> 
+    </div>
+    <div class="link">
+      <a style="text-decoration: none" href="mailto:n.toftte@gmail.com">
+        <p class="contact-info">
+          N.Toftte@gmail.com
+        </p>
+      </a>
+      
+    </div>
+    <div class="link">
+      <a style="text-decoration: none" href="https://www.linkedin.com/in/Nikolaj-Toftte/" target="_blank">
+        <p class="contact-info">
+          linkedin.com/in/Nikolaj-Toftte
+        </p>
+      </a>
+    </div>
+  </div>
+    
+    <div class="logo-position">
+      <div>
+        <img class="contact-logo" src="images/phone_logo.png">
+      </div>
+      <div>
+        <img class="contact-logo" src="images/mail_logo.png">
+      </div>
+      <div>
+        <img class="contact-logo" src="images/linkedIn_logo.png">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="portfolio__title">
+  SimplTronics I/S
+</div>
+
+<div style="display: flex; flex-direction: row;">
+  <div container__info>
+    <p class="description__header">
+      Type of project
+    </p>
+    <p class="description__text">
+      Mechatronics online learning platform
+    </p>
+    <p class="description__header">
+      Context
+    </p>
+    <p class="description__text">
+      Startup company
+    </p>
+    <p class="description__header">
+      Year
+    </p>
+    <p class="description__text">
+      2021
+    </p>
+  </div>
+  <div class="container__description">
+    <div class="about__header">
+      About the project
+    </div>
+    <p class="about__text">
+      Simpltronics is an online learning platform startup that aims at making leaning mechatronics easier. Mechatronics is the craft of combining coding with mechanics to create for example robots. The startup consisted of myself and 4 others.
+    </p>
+    <p class="about__text">
+      The website can be accessed here: <a href="https://simpltronics.netlify.app/" target="_blank">simpltronics.netlify.app/</a>
+    </p>
+    <p class="about__text">
+      The website was motivated by the lack of modern mechatronic teaching material available. Many universities in the world still teach mechatronics via a textbook which is pages upon pages of text. We thought that this is an outdated way of teaching and wanted to give beginners a place where they would learn not only by reading but by interacting and looking at the teaching material.
+    </p>
+    <p class="about__text">
+      The startup is dissolved since the team had other interests they wanted to pursue instead.
+    </p>
+
+  </div>
+</div>
+
+<div class="image__gallery">
+  <img class="image" src="images/simpltronics/start.png">
+  <img class="image" src="images/simpltronics/Skærmbillede 2022-11-14 101108.png">
+  <img class="image" src="images/simpltronics/guide1.png">
+</div>
+
+<div class="container__description">
+  <div class="about__header">
+    The process
+  </div>
+  <p class="about__text">
+    The website has a lot of mechatronics resources gathered as well as multiple guides on how to get started, how to code, how to 3D print as well as other guides on different projects. This gives new users an easy overview on how to get started. The projects would have different skill levels so that the user could progress in skill and keep challenging themselves. 
+  </p>
+  <p class="about__text">
+    Another great feature of the website is all of the interactive learning that is implemented. An example of this is the interactive coding tool that was implemented that uses a block structure to give the user an easy overview of what features change what code, and how the different variables and components of the circuit can interact with the code.
+  </p>
+  <p class="about__text">
+    The validation of the website happened in the form of multiple workshops. In the span of 5 workshops more than 40 participants used the website to create a beginner project. Data from the participants were collected via a questionnaire after each workshop. The feedback was overall very positive and the website succeeded in providing a more modern way of teaching mechatronics.
+  </p>
+</div>
+<div class="image__gallery">
+  <img class="image" src="images/simpltronics/IMG_20211007_202436462.jpg">
+  <img class="image" src="images/simpltronics/tool.png">
+</div>
+
+
+
+
+</body>
+</html>
